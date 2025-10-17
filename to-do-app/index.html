@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind To-Do List</title>
+
+  <!-- ✅ Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Custom font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-indigo-500 to-purple-600 min-h-screen flex justify-center items-center font-[Poppins]">
+
+  <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-2xl w-96 text-center">
+    <h1 class="text-3xl font-bold mb-6 text-gray-800">📝 To-Do List</h1>
+
+    <div class="flex mb-4 space-x-2">
+      <input id="taskInput"
+        class="flex-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-400 outline-none"
+        placeholder="Enter a task..." />
+      <button id="addBtn"
+        class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:scale-105 transform transition">
+        Add
+      </button>
+    </div>
+
+    <ul id="taskList" class="space-y-2 text-left"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
